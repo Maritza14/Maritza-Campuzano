@@ -12,14 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :photo %>
-    <%= form.text_field :photo, id: :pin_photo, :class=>'form-control' %>
+    <%= form.label :name, "Foto" %>
+    <%= form.text_field :photo, id: :pin_photo, :class=>'form-control', :placeholder=> "URL de la foto" %>
   </div>
 
     <div class="form-group">
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :pin_description,:class=>'form-control' %>
+    <%= form.label :name, "Descripcion" %>
+    <%= form.text_area :description, id: :pin_description,:class=>'form-control',  :placeholder=> "Descripción", :rows=>"3", :cols=> "10" %>
       </div>
     </div>
 
@@ -31,6 +31,6 @@
     </div>
 
     <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Crear", :class =>"btn btn-primary"%>
   </div>
 <% end %>
