@@ -13,20 +13,24 @@
 
   <div class="field">
     <%= form.label :photo %>
-    <%= form.text_field :photo, id: :pin_photo %>
+    <%= form.text_field :photo, id: :pin_photo, :class=>'form-control' %>
   </div>
 
+    <div class="form-group">
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description, id: :pin_description %>
-  </div>
+    <%= form.text_field :description, id: :pin_description,:class=>'form-control' %>
+      </div>
+    </div>
 
+    <div class="form-group">
   <div class="field">
     <%= form.label :active %>
     <%= form.check_box :active, id: :pin_active %>
   </div>
+    </div>
 
-  <div class="actions">
+    <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
