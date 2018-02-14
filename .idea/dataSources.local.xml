@@ -10,5 +10,24 @@
       <user-name>postgres</user-name>
       <introspection-schemas>postgres:public</introspection-schemas>
     </data-source>
+    <data-source name="Rails Pinterest: production" uuid="be5484bf-1f5a-46cc-9dff-b8c92d49d3b6">
+      <database-info product="PostgreSQL" version="10.1" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <introspection-schemas>postgres:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails Pinterest: test" uuid="05936f21-8ba7-47b0-87bf-62b0fad498f6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Rails Pinterest: development" uuid="d9258753-eb03-448f-98c2-089d6a15ff8c">
+      <database-info product="PostgreSQL" version="10.1" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <introspection-schemas>postgres:public</introspection-schemas>
+    </data-source>
   </component>
 </project>
