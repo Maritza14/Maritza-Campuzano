@@ -1,9 +1,10 @@
+<h1>Tu eres la vista de Pins</h1>
 
-<div class="container">
-  <h1>Tu eres la vista de Pins</h1>
+<div id="container">
+
 
     <% @pins.each do |pin| %>
-        <div class="col-md-5">
+        <div class="item" style="width:25%">
           <div class="thumbnail">
 
 
@@ -26,3 +27,20 @@
   <%= link_to 'New Pin', new_pin_path %>
       <% end %>
 </div>
+
+<script type="text/javascript">
+    var $container = $ ('#container');
+    //initialize
+    $container.masonry({
+        columnWidth:200,
+        itemSelector: '.item'
+    });
+  $(window).load(function(){
+var $container = $ ('#container');
+//initialize
+    $container.masonry({
+        columnWidth:200,
+        itemSelector: '.item'
+    });
+  })
+</script>
